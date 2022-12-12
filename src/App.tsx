@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { useState } from 'react'
+import style from './App.module.css'
+import Task from './components/tasks'
+function App (): JSX.Element {
+  const [taskNumber, setTaskNumber] = useState(0)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <section className={style.wrapper}>
+      <div className={style.buttons}>
+        <button className={style.taskButton} onClick={() => { setTaskNumber(1) }}>Task One</button>
+        <button className={style.taskButton} onClick={() => { setTaskNumber(2) }}>Task Two</button>
+        <button className={style.taskButton} onClick={() => { setTaskNumber(3) }}>Task Three</button>
+      </div>
+      <Task taskNumber={taskNumber} />
+      </section>
+    </>
+  )
 }
 
-export default App;
+export default App
