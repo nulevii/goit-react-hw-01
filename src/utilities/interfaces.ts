@@ -1,5 +1,4 @@
 export interface ProfileInterface {
-
   username: string
   tag: string
   location: string
@@ -9,7 +8,6 @@ export interface ProfileInterface {
     views: number
     likes: number
   }
-
 }
 
 export interface StatInterface {
@@ -22,7 +20,7 @@ export interface FriendInterface {
   avatar: string
   name: string
   isOnline: boolean
-  id: number
+  id?: number
 }
 
 export interface TransactionInterface {

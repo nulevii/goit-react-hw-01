@@ -1,8 +1,8 @@
 import React from 'react'
-import Profile from '../task-one'
-import Statistics from '../task-two'
-import FriendList from '../task-three'
-import TransactionHistory from '../task-four'
+import Profile from '../profile'
+import Statistics from '../statistics'
+import FriendList from '../friend-list'
+import TransactionHistory from '../transaction-history'
 
 import profile from '../../utilities/mock-data/user.json'
 import data from '../../utilities/mock-data/data.json'
@@ -15,8 +15,8 @@ function Task ({ taskNumber }: { taskNumber: number }): JSX.Element | null {
   }
 
   if (taskNumber === 2) {
-    const title = 'Upload stats'
-    return <Statistics stats={data} title={title}/>
+    // const title = 'Upload stats'
+    return <Statistics stats={data} />
   }
 
   if (taskNumber === 3) {
