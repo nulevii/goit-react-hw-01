@@ -1,73 +1,53 @@
 
 
-.profile {
+.friendsList {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
+  align-items: stretch;
+  gap: 10px;
   width: 270px;
   margin: auto;
   margin-top: 30px;
-  padding-top: 20px;
+  padding: 20px;
 
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: #ffffff;
   
 }
-.description {
+
+
+
+.item{
+  padding: 5px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding-bottom: 15px;
-}
-.avatar {
-  width: 100px;
-  background-color: #faebd7;
-  border-radius: 100%;
+  gap: 6px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .name {
-  font-weight: 600;
-}
-.tag {
-  color: #777676;
-  margin: 0;
-  margin-bottom: 5px;
-}
-.location {
-  color: #777676;
-  margin: 0
-}
-.stats {
-  display: flex;
-  text-align: center;
-  list-style: none;
-  justify-content: center;
-  padding: 0;
-  width: 100%;
-  margin-bottom: 0;
-  background-color: #e4e8f1;
-}
-
-.stats li:nth-child(2n){
-  border-left: none;
-  border-right: none;
-
-}
-
-.listEl{
-  width: 90px;
-  padding: 15px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border: 1px solid #c7c3c3;
-}
-.label {
   display: block;
-  margin-bottom: 6px;
-  color: #777676;
+  font-size: 20px;
+  margin: 0;
+
 
 }
-.quantity {
-  font-weight: 700;
+.avatar {
+  background-color: antiquewhite;
+  border-radius: 6px;
+}
+
+.status {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+
+.statusTrue {
+  background-color: green;
+}
+
+.statusFalse {
+  background-color:red;
 }

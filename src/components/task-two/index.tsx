@@ -1,34 +1,28 @@
 import React from 'react'
 
-function TaskTwo ({ stats }: { stats: Array<{
-  id: string
-  label: string
-  percentage: number
-}> }): JSX.Element {
+import { StatInterface } from '../../utilities/interfaces'
+import style from './style.module.css'
+function Statistics ({
+  stats,
+  title
+}: {
+  stats: StatInterface[]
+  title: string
+}): JSX.Element {
   return (
-    <section className="statistics">
-  <h2 className="title">Upload stats</h2>
+    <section className={style.statistics}>
+      <h2 className={style.title}>{title}</h2>
 
-  <ul className="stat-list">
-    <li className="item">
-      <span className="label">.docx</span>
-      <span className="percentage">4%</span>
-    </li>
-    <li className="item">
-      <span className="label">.mp3</span>
-      <span className="percentage">14%</span>
-    </li>
-    <li className="item">
-      <span className="label">.pdf</span>
-      <span className="percentage">41%</span>
-    </li>
-    <li className="item">
-      <span className="label">.mp4</span>
-      <span className="percentage">12%</span>
-    </li>
-  </ul>
-</section>
+      <ul className={style.statList}>
+        {stats.map(({ id, label, percentage }) => (
+          <li key={id} className={style.item}>
+            <span className={style.label}>{label}</span>
+            <span className={style.percentage}>{percentage}%</span>
+          </li>
+        ))}
+      </ul>
+    </section>
   )
 }
 
-export default TaskTwo
+export default Statistics

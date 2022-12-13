@@ -1,73 +1,72 @@
-
-
-.profile {
+.statistics {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  width: 270px;
+  width: 400px;
   margin: auto;
   margin-top: 30px;
-  padding-top: 20px;
+  padding-top: 40px;
+  text-transform: uppercase;
 
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: #ffffff;
   
 }
-.description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 15px;
-}
-.avatar {
-  width: 100px;
-  background-color: #faebd7;
-  border-radius: 100%;
-}
-.name {
-  font-weight: 600;
-}
-.tag {
+.title {
   color: #777676;
-  margin: 0;
-  margin-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
-.location {
-  color: #777676;
-  margin: 0
-}
-.stats {
+.statList {
   display: flex;
   text-align: center;
   list-style: none;
   justify-content: center;
   padding: 0;
   width: 100%;
-  margin-bottom: 0;
-  background-color: #e4e8f1;
+  margin: 0;
 }
 
-.stats li:nth-child(2n){
-  border-left: none;
-  border-right: none;
-
+.statList li:nth-child(1){
+  background-color: #4ec4f4;
+}
+.statList li:nth-child(2){
+  background-color: #a23af5;
+}
+.statList li:nth-child(3){
+  background-color: #e54c62;
+}
+.statList li:nth-child(4){
+  background-color: #20b7c5;
+}
+.statList li:nth-child(5){
+  background-color: #c5cc5d;
 }
 
-.listEl{
-  width: 90px;
+.item {
+  color: white;
+  text-align: center;
+  list-style: none;
+  width: 80px;
+  background-color: rgb(219, 127, 127);
   padding: 15px;
   padding-top: 25px;
   padding-bottom: 25px;
-  border: 1px solid #c7c3c3;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 .label {
+  text-transform: lowercase;
   display: block;
   margin-bottom: 6px;
-  color: #777676;
+}
+.percentage {
+  font-size: 20px;
+}
 
-}
-.quantity {
-  font-weight: 700;
-}
+
+
+
+
+
