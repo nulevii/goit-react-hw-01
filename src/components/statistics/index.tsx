@@ -7,11 +7,11 @@ function Statistics ({
   title
 }: {
   stats: StatInterface[]
-  title?: string
+  title?: string | undefined
 }): JSX.Element {
   return (
     <section className={style.statistics}>
-      <h2 className={style.title}>{title ?? null}</h2>
+      {(title !== undefined) && <h2 className={style.title}>{title}</h2>}
 
       <ul className={style.statList}>
         {stats.map(({ id, label, percentage }) => (
